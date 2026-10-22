@@ -1,0 +1,23 @@
+generated: '2026-10-21'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.trybeam.com/pricing
+sources:
+- https://www.trybeam.com/pricing
+name: Beam pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Core
+  price_text: $0 / mo
+  price: 0
+  billing_period: monthly
+- name: Plus
+  price_text: $200 / mo
+  price: 200
+  billing_period: monthly
+- name: Scale
+  price_text: $400 / mo
+  price: 400
+  billing_period: monthly
+docs: https://www.trybeam.com/pricing

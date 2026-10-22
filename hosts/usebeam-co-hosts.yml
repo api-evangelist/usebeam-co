@@ -1,0 +1,61 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - website
+hosts:
+- host: api.trybeam.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: trybeam.com
+  role: api
+  relation: other-domain
+- host: api.usebeam.co
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: usebeam.co
+  role: api
+  relation: own
+- host: www.trybeam.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Security
+  - PrivacyPolicy
+  - Pricing
+  serves: []
+  registrable_domain: trybeam.com
+  role: marketing
+  relation: other-domain
+- host: www.usebeam.co
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: usebeam.co
+  role: website
+  relation: own
